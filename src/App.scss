@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.App{
+  font-family: 'Open Sans', sans-serif;
+
+}
+section{
+
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 5%;
+
+  > h2{
+
+    text-align: center;
+  }
+}

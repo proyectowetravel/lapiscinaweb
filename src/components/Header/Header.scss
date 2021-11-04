@@ -1,0 +1,57 @@
+/*
+ * Header css File
+*/
+
+.Header {
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  background-color: green;
+  display: flex;
+}
+.container2 {
+  animation: fadeIn 1s;
+  width: 100%;
+
+  border-bottom: 5px solid black;
+ >ul >li{
+     margin-left: -15%;
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+ }
+}
+.menu {
+  background-color: black;
+  width: 30%;
+
+
+  > img {
+ 
+     margin-top: 35%;
+    margin-left: 25%;
+    width: 30%;
+ 
+  }
+}
+.logo {
+  width: 70%;
+  height: 20vh;
+  background-color: black;
+  > img {
+    width: 40%;
+    margin-left: 8%;
+    margin-top: 5%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
