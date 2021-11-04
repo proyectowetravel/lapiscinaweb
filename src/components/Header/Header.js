@@ -3,11 +3,15 @@ import "./Header.scss";
 import logo from "../../img/logo.png";
 import menu from "../../img/menu.png";
 import menu2 from "../../img/menu2.png";
+import Nav from "../Nav"
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [menu1, setMenu1] = useState(true);
 
+
+
+  
   
 
   return (
@@ -32,12 +36,7 @@ const Header = () => {
       </div>
       {showMenu ? (
         <div className="container2">
-          <ul>
-            <li>Inicio</li>
-            <li>Menú</li>
-            <li>Reservas</li>
-            <li>Contacto</li>
-          </ul>
+          <Nav data={ () =>  {return setShowMenu(!showMenu) , setMenu1(!menu1)} }/>
         </div>
       ) : (
         ""
