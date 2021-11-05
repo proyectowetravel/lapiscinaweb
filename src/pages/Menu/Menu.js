@@ -1,11 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import Banner2 from "../../img/banner2.jpg";
+import Loader from "../../components/Loader/Loader"
 import "./Menu.scss";
+
 const Menu = () => {
+
+  const [img,setImg]=useState(true)
+  
   return (
     <div className="Menu">
-      <img src={Banner2} alt="" />
-      <section className="menu-header">
+      {img?<img src={Banner2} data-aos="zoom-in" alt="" /> : <Loader/>}
+      
+      <section data-aos="fade-in" className="menu-header">
         It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout. The point of
         using Lorem Ipsum is that it has a more-or-less normal distribution of
